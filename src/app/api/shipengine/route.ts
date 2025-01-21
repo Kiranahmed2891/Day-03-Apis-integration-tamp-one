@@ -14,7 +14,10 @@ import ShipEngineAPI from "shipengine";
 // Create ShipEngine instance (Do not export this instance)
 const shipEngineInstance = new ShipEngineAPI({
   apiKey: process.env.SHIPENGINE_API_KEY as string,
+  
 });
+
+
 
 export async function GET() {
   return new Response(JSON.stringify({ message: "ShipEngine Testing" }));
@@ -68,3 +71,4 @@ export async function POST(request: NextRequest) {
     }
   }
 }
+
