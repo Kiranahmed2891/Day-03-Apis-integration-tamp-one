@@ -10,7 +10,8 @@ import Footer from "./component/footer";
 import  Main  from "./productOne/page";
 
 import Main2 from "./productTwo/page"
-import UserForm from "@/components/form"
+
+
 
 
 
@@ -31,7 +32,7 @@ export default  function Land() {
 <Main2/>
 <DressStyle />
 <DressStyleCard title={""} url={""} />
-<UserForm/>
+
 
 <Review />
 
