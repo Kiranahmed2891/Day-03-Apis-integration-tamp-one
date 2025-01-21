@@ -1,5 +1,5 @@
 // import { NextRequest } from "next/server";
-import ShipEngine from "shipengine";
+// import ShipEngine from "shipengine";
 
 // export async function GET(){
 //     return new Response(JSON.stringify({message:"shipengineTesting"}))
@@ -18,6 +18,10 @@ const shipEngineInstance = new ShipEngineAPI({
 });
 
 
+if (!process.env.SHIPENGINE_API_KEY){
+
+  console.log("Shipengine api key not found")
+}
 
 export async function GET() {
   return new Response(JSON.stringify({ message: "ShipEngine Testing" }));
