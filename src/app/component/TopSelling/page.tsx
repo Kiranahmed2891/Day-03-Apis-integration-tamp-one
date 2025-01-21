@@ -85,7 +85,7 @@ export default function TopSelling() {
         <h3 className="text-lg font-bold mb-2 text-center">{product.title}</h3>
         <p className="text-sm mb-4 text-center">{product.description}</p>
         <Link href={`/component/TopSelling/${product.id}`}>
-          <button className="mt-4 px-6 py-2 bg-yellow-500 text-black rounded-lg font-semibold transition duration-300 ease-in-out hover:bg-yellow-400">
+          <button className="mt-4 px-6 py-2 bg-[#b42fb8] text-black rounded-lg font-semibold transition duration-300 ease-in-out hover:bg-[#b42fb8]">
             View Details
           </button>
         </Link>

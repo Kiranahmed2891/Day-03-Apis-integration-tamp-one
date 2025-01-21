@@ -7,26 +7,34 @@ import DressStyle from "./component/dressStyle";
 import DressStyleCard from "./component/dressStyleCard";
 import Review from "./component/review";
 import Footer from "./component/footer";
-import Sanity2 from "./product-2/page"
-import Sanity from "./product/page"
+import  Main  from "./productOne/page";
+
+import Main2 from "./productTwo/page"
+import UserForm from "@/components/form"
 
 
 
 
 
-export default function Land() {
+export default  function Land() {
+
+
+  
   return (
   <div>
     <Home />
 <Hero />
 <Brands />
 <NewArrivals />
-<Sanity/>
+<Main/>
 <TopSelling />
-<Sanity2/>
+<Main2/>
 <DressStyle />
 <DressStyleCard title={""} url={""} />
+<UserForm/>
+
 <Review />
+
 <Footer />
 
   </div>  
